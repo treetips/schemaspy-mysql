@@ -26,8 +26,8 @@ JDBCドライバの準備や、Alpine linuxにGraphviz環境を準備する手�
 - MySQL-server(any version)
 - Dcoker v17
 - docker-compose v1.14
-- alpine:3.6 v3.6
-- nginx:1.13.1-alpine
+- alpine:3.6 v3.7
+- nginx:1.13.9-alpine
 
 ## Requirement
 
@@ -55,10 +55,10 @@ JDBCドライバの準備や、Alpine linuxにGraphviz環境を準備する手�
 git clone https://github.com/treetips/simple-static-file-viewer.git
 # Run containers and execute SchemaSpy
 docker-compose up -d
-# Browse table definition
-http://localhost:8081/
 # Update table definition
 docker-compose run --rm schemaspy
+# Browse table definition
+http://localhost:8081/
 ```
 
 ## Change database settings
