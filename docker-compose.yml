@@ -5,13 +5,13 @@ volumes:
 
 services:
   shared:
-    image: alpine:3.6
+    image: alpine:3.7
     container_name: schemaspy_data
     volumes:
       - shared:/var/www/html:rw
 
   webserver:
-    image: nginx:1.13.1-alpine
+    image: nginx:1.13.9-alpine
     container_name: schemaspy_nginx
     depends_on:
       - shared
